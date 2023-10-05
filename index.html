@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora | saúde</title>
+   <link rel="stylesheet" href="assets/css/imcStyle.css">
+   <link rel="stylesheet" href="assets/css/tmbStyle.css">
+   <link rel="stylesheet" href="assets/css/aguaStyle.css">
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+   }
+
+   body {
+      background-color: #E8F299;
+   }
+</style>
+
+<body>
+   <div class="interface">
+      <div class="flex">
+         <div class="input-imc">
+            <div class="texto-principal">
+               <h1>Calculo do imc</h1>
+            </div> <!-- Texto principal do imc-->
+            <div class="input-peso">
+               <label for="kg">Informe o seu peso (KG)</label>
+               <input type="text" autocomplete="off" maxlength="6" placeholder="Quilos" id="kg" class="mask">
+            </div>
+
+            <div class="input-altura">
+               <label for="altura">Informe a sua altura(m)</label>
+               <input type="text" maxlength="4" placeholder="Altura" autocomplete="off" id="altura(m)" class="mask2">
+            </div>
+
+            <button style="width: 70px; height: 25px;" class="btn-geral" onclick="imcCorporal()">Calcular</button>
+
+            <div id="ResultadoImc"></div>
+         </div> <!--Fim da seção de imc-->
+
+         
+         <div class="input-agua" style="display: none;">
+            <div class="texto-agua">
+               <h2>Calculo de ingestão de água </h2>
+            </div> <!-- Texto principal agua-->
+            <div class="input-peso">
+               <label for="kg-ag">Informe o seu peso (KG)</label>
+               <input type="text" autocomplete="off" maxlength="6" placeholder="Quilos" id="cons" class="mask">
+            </div>
+
+            <button style="width: 70px; height: 25px;" class="btn-geral" onclick="calcularAgua()">Calcular</button>
+
+            <div id="resultadoAgua"></div>
+
+         </div>
+      
+         <div class="input-tbm" style="display: none;">
+            <div class="texto-tbm">
+               <h3>Calculo de taxa de metabolismo</h3>
+            </div> <!-- Texto principal-->
+
+            <div class="btn-centro">
+               <button class="btnHomem" onclick="resultadoHomem()">homem</button>
+               <button class="btnMulher" onclick="resultadoMulher()">mulher</button>
+            </div>
+
+            <div class="input-nome">
+               <label for="kg-tbm">Informe o seu peso (KG)</label>
+               <input type="text" autocomplete="off" maxlength="6" placeholder="Quilos" id="quilo" class="mask">
+            </div>
+
+            <div class="input-altura">
+               <label for="altura">Informe a sua altura(m)</label>
+               <input type="text" maxlength="4" placeholder="Altura" autocomplete="off" id="tam" class="mask2">
+            </div>
+
+            <div class="input-idade">
+               <label for="idade">Informe a sua idade</label>
+               <input type="text" placeholder="idade" id="idade" autocomplete="off" maxlength="3">
+            </div>
+            <button style="width: 70px; height: 25px;" class="btn-geral" onclick="tbmCorporal()">Calcular</button>
+
+            <div id="ResultadoTbm"></div>
+            <div class="resultadoHomem"></div>
+            <div class="resultadoMulher"></div>
+         </div>
+      </div> <!--Fim display flex-->
+   </div> <!--Fim display da interface-->
+   <div class="btn-top">
+      <button style="width: 50px; height: 25px;" onclick="btnDiv(1)">IMC</button>
+      <button style="width: 50px; height: 25px;" onclick="btnDiv(3)">TBM</button>
+      <button style="width: 50px; height: 25px;" onclick="btnDiv(2)">Água</button>
+   </div> <!--Botao de alternamento-->
+
+</body>
+<script src="/assets/js/CalculoIMC.js"></script>
+<script src="/assets/js/CalculoAgua.js"></script>
+<script src="/assets/js/CalculoTbm.js"></script>
+<script src="/assets/js/MaskInput.js"></script>
+<script src="/assets/js/alternamento.js"></script>
+
+</html>

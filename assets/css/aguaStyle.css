@@ -1,0 +1,43 @@
+.interface .flex .texto-agua {
+    margin: 40px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .interface .flex .input-agua {
+    margin: 40px 4%;
+    display: block;
+ }
+
+ .input-agua input {
+    display: block;
+    margin: 10px auto;
+ }
+
+ .input-agua label {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+ }
+
+ .btn-agua {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+ }
+
+ .input-agua #resultadoAgua {
+    padding-top: 10px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .btn-top {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+ }

@@ -1,0 +1,57 @@
+.interface .flex .texto-tbm {
+   margin: 40px 4%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.interface .flex .input-tbm {
+   margin: 40px 4%;
+   display: block;
+}
+
+.input-tbm input {
+   display: block;
+   margin: 10px auto;
+}
+
+.input-tbm label {
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+.btn-tbm {
+   display: flex;
+   margin: 20px auto;
+   justify-content: center;
+}
+
+.input-tbm #ResultadoTbm , .resultadoHomem, .resultadoMulher {
+   padding-top: 10px;
+   display: flex;
+   flex-direction: column-reverse;
+   margin: 0 auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn-top {
+   display: flex;
+   margin: 0 auto;
+   gap: 20px;
+   justify-content: center;
+}
+
+.btn-geral {
+   display: flex;
+   margin: 20px auto;
+   justify-content: center;
+}
+
+.btn-centro {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding-bottom: 10px;
+}

@@ -1,0 +1,44 @@
+.interface .flex .texto-principal {
+    margin: 40px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .interface .flex .input-imc {
+    margin: 40px 4%;
+    display: block;
+ }
+
+ .input-imc input {
+    display: block;
+    margin: 10px auto;
+ }
+
+ .input-imc label {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+ }
+
+ .btn-geral {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+ }
+
+ .input-imc #ResultadoImc {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .btn-top {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+ }
